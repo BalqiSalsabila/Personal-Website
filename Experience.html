@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Experience</title>
+  <title>Photo Grid</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+	
+	    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://wallpapercave.com/wp/wp6775234.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      color: maroon;
+      margin: 20px 0 40px;
+      width: 50%;
+      background-color: rgba(255, 182, 193, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+	
+	.intro-text {
+	  text-align:center;
+	  color:maroon;
+	  font-size:1.2rem;
+	  margin:20px 0 40px;
+	  width: 70%;
+	  background-color: rgba(255,182,193,0.7);
+	  padding:10px;
+	  border-radius:8px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	 }
+	 
+	  .navigation-buttons {
+      position: absolute;
+      top: 10px;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: darksalmon;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: salmon;
+      transform: scale(1.05);
+    }
+	
+	.w3-row-padding img {
+	  border: 2px solid darksalmon;
+	  border-radius: 10px;
+	  object-fit: cover;
+	  height: 320px;
+	  width:95%;
+	}
+
+	.w3-container {
+	  text-align: center;
+	  margin-top: 15px;
+	  background-color:pink;
+	  color:maroon;
+	  padding:10px;
+	  border-radius: 8px
+	}
+	
+	.w3-container p {
+	  color: maroon;
+	  margin: 5px 0;
+	}
+	
+	    footer {
+      background-color: darksalmon;
+      color: maroon;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        width: 90%;
+      }
+
+      .intro-text {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Navigation Buttons -->
+  <div class="navigation-buttons">
+    <a href="about.html">Back</a>
+	<a href="next experience.html">Next</a>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <h1><b>My Experience</b></h1>
+  </header>
+  
+  <div class="intro-text">
+    These are some of the experiences that have enriched my life, teaching me valuable lessons and creating cherished memories.
+  </div>
+
+<!-- First Photo Grid -->
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="picture/teacher.jpg" alt="teacher" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Teaching Moments</b></p>
+      <p>Teaching has been a rewarding experience, allowing me to inspire and guide others</p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="picture/talan.jpg" alt="river" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Exploring Nature</b></p>
+      <p>Nature trips, especially near rivers, provide a serene escape from the hustle and bustle of life</p>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <img src="picture/hiking.jpg" alt="hiking" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Hiking Adventures</b></p>
+      <p>Hiking allows me to enjoy breathtaking views while challenging my endurance</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Photo Grid -->
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="picture/netball.jpg" alt="Netball" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Netball Games</b></p>
+      <p>Playing netball has taught me the importance of teamwork and quick decision-making</p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="picture/business.jpg" alt="Business" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Business Experience</b></p>
+      <p>Engaging in small business ventures has enhanced my entrepreneurial skills</p>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <img src="picture/program.jpg" alt="program" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Community Programs</b></p>
+      <p>Participating in community programs has helped me build meaningful connections</p>
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <p>IMD318&copy; 2024 Balqis Salsabila. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

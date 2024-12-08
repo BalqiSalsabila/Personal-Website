@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Experience</title>
+  <title>Custom Photo Grid with Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://wallpapercave.com/wp/wp6775234.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      color: maroon;
+      margin: 20px 0 40px;
+      width: 50%;
+      background-color: rgba(255, 182, 193, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+
+    .intro-text {
+      text-align: center;
+      color: maroon;
+      font-size: 1.2rem;
+      margin: 20px 0 40px;
+      width: 50%;
+      background-color: rgba(255, 182, 193, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation-buttons {
+      position: absolute;
+      top: 10px;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: darksalmon;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: salmon;
+      transform: scale(1.05);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 90%;
+      max-width: 1200px;
+	  margin: 0 auto 40px;
+    }
+
+    .photo-grid img, .photo-grid video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo-grid .center-video {
+      grid-column: 2 / 4; 
+      grid-row: 2 / 4;   
+      max-width: 100%;
+      max-height: calc(100vh / 2); 
+      aspect-ratio: 16 / 9; 
+    }
+
+    .photo-grid .small-img {
+      max-width: 100%;
+      max-height: calc(100vh / 4); 
+      aspect-ratio: 4 / 3;
+    }
+		
+    footer {
+      background-color: darksalmon;
+      color: maroon;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        width: 90%;
+      }
+
+      .intro-text {
+        width: 70%;
+      }
+
+      .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .photo-grid .center-video {
+        grid-column: span 2; 
+        grid-row: auto;
+        max-height: calc(100vh / 3);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navigation-buttons">
+    <a href="Experience.html">Back</a>
+  </div>
+  
+  <header>
+    <h1><b>My Experience</b></h1>
+  </header>
+  
+  <div class="intro-text">
+    These are the experiences and activities I participated in during my internship.
+  </div>
+  
+  <div class="photo-grid">
+
+    <img class="small-img" src="picture/gambar.jpg" alt="gambar">
+    <img class="small-img" src="picture/sapura.jpg" alt="sapura">
+    <img class="small-img" src="picture/selfie.jpg" alt="selfie">
+    <img class="small-img" src="picture/sukan.jpg" alt="sukan">
+
+    <video class="center-video" controls>
+      <source src="vidintern.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <img class="small-img" src="picture/taha.jpg" alt="taha">
+    <img class="small-img" src="picture/training.jpg" alt="training">
+    <img class="small-img" src="picture/win.jpg" alt="win">
+    <img class="small-img" src="picture/carrom.jpg" alt="carrom">
+  </div>
+  
+  <footer>
+    <p>IMD318&copy; 2024 Balqis Salsabila. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

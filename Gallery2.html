@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+  <title>Responsive Cards with Hover Effects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://wallpapercave.com/wp/wp6775234.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      color: maroon;
+      margin: 20px 0 40px;
+      width: 50%;
+      background-color: rgba(255, 182, 193, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .navigation-buttons {
+      position: absolute;
+      top: 10px;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: darksalmon;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: salmon;
+      transform: scale(1.05);
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 90%;
+      padding: 20px;
+    }
+
+    .card {
+      background: darksalmon;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .card:hover .card-content {
+      background-color: pink;
+      color: maroon;
+    }
+
+    .card-content h3 {
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer {
+      background-color: darksalmon;
+      color: maroon;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .card-content h3 {
+        font-size: 1.2rem;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation-buttons">
+    <a href="Gallery1.html">Back</a>
+	<a href="End.html">Next</a>
+  </div>
+
+  <header>
+    <h1>My Dean's Award</h1>
+  </header>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="picture/sem1.jpg" alt="sem1">
+      <div class="card-content">
+        <h3>Semester 1</h3>
+        <p>A moment of honor with the Dean, whose leadership and guidance have shaped my academic journey</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="picture/sem2.jpg" alt="sem2">
+      <div class="card-content">
+        <h3>Semester 3</h3>
+        <p>Grateful for the chance to capture this moment with the Dean, who has always been an inspiration</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="picture/sem3.jpg" alt="sem3">
+      <div class="card-content">
+        <h3>Semester 4</h3>
+        <p>This photo with the Dean marks a significant moment, representing the dedication and hard work that has been supported throughout my academic path</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>IMD318&copy; 2024 Balqis Salsabila. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

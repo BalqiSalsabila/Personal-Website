@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="picture/Logo.jpg">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Biodata</title>
+  <title>My Biodata</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffe6e6;
+      background-image: url('picture/background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      background-color: darksalmon;
+      animation-name: header-animation;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes header-animation {
+      from {
+        background-color: pink;
+      }
+      to {
+        background-color: salmon;
+      }
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      margin: 10px 0;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: darksalmon;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: salmon;
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex: 1; 
+      padding-right: 100px;
+      margin-top: 10%;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    #profile-table {
+      border-collapse: collapse;
+      width: 50%; 
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #profile-table td, #profile-table th {
+      padding: 8px 16px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #profile-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    #profile-table th {
+      background-color: darksalmon;
+      color: white;
+      text-align: left;
+    }
+
+    #profile-table td {
+      text-align: left;
+      color: #333;
+	  font-size: 0.9rem;
+    }
+
+    
+        footer {
+            background-color: darksalmon;
+            color: maroon;
+            width: 100%; 
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; 
+        }
+
+        footer p {
+            margin: 0;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Biodata</h1>
+  </header>
+
+  <div class="navigation-buttons">
+    <a href="about.html">Back</a>
+    <a href="favourite food.html">Next</a>
+  </div>
+
+  <div class="container">
+    <table id="profile-table">
+      <tr>
+        <th>Name</th>
+        <td>Balqis Salsabila Binti Norazali</td>
+      </tr>
+      <tr>
+        <th>Date of birth</th>
+        <td>26 August 2004</td>
+      </tr>
+      <tr>
+        <th>Birth of Place</th>
+        <td>Negeri Sembilan, Malaysia</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>Bandar baru Bangi, Selangor</td>
+      </tr>
+      <tr>
+        <th>Education</th>
+        <td>Diploma in Information Management, UiTM Campus Rembau</td>
+      </tr>
+      <tr>
+        <th>E-mail Address</th>
+        <td>salsabilacare1720@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+
+<footer>
+    <p>IMD318&copy; 2024 Balqis Salsabila. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
+

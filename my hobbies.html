@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <title>Responsive Cards with Hover Effects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://wallpapercave.com/wp/wp6775234.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      color: maroon;
+      margin: 20px 0 40px;
+      width: 50%;
+      background-color: rgba(255, 182, 193, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .navigation-buttons {
+      position: absolute;
+      top: 10px;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: darksalmon;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: salmon;
+      transform: scale(1.05);
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1180px;
+      width: 95%;
+      padding: 30px;
+    }
+
+    .card {
+      background: darksalmon;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .card:hover .card-content {
+      background-color: pink;
+      color: maroon;
+    }
+
+    .card-content h3 {
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+    }
+
+    .card-content p {
+      font-size: 1.1rem;
+      margin: 0;
+	  line-height: 1.5;
+    }
+
+    footer {
+      background-color: darksalmon;
+      color: maroon;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .card-content h3 {
+        font-size: 1.2rem;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation-buttons">
+    <a href="favourite song.html">Back</a>
+  </div>
+
+  <header>
+    <h1>My Hobbies</h1>
+  </header>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="picture/badminton.jpeg" alt="badminton">
+      <div class="card-content">
+        <h3>Playing Badminton</h3>
+        <p>I like to play badminton in my free time with friends and family</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="picture/friends.jpeg" alt="friends">
+      <div class="card-content">
+        <h3>Outing with friends</h3>
+        <p>I enjoy spending quality time with friends, strengthening our bond, and sharing meaningful conversations whenever we meet.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="picture/pingpong.jpeg" alt="pingpong">
+      <div class="card-content">
+        <h3>Playing PingPong</h3>
+        <p>I like playing table tennis after trying this sport after my friend introduced it to me..</p>
+      </div>
+    </div>
+	
+    <div class="card">
+      <img src="picture/food.jpeg" alt="food">
+      <div class="card-content">
+        <h3>Food Hunting</h3>
+        <p>My latest hobby is food hunting, where I explore and try new, viral, and trending dishes</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>IMD318&copy; 2024 Balqis Salsabila. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
